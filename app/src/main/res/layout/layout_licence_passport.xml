@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/viewOne"
+        layout="@layout/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDriverLicence"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white"
+        android:drawableStart="@drawable/ic_car"
+        android:drawableEnd="@drawable/ic_right"
+        android:drawablePadding="30dp"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:text="Driver's Licence"
+        android:textColor="#3C3D3F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewOne" />
+
+
+    <include
+        android:id="@+id/viewTwo"
+        layout="@layout/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDriverLicence" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStateIdentification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white"
+        android:drawableStart="@drawable/ic_card"
+        android:drawableEnd="@drawable/ic_right"
+        android:drawablePadding="30dp"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:text="State Identification"
+        android:textColor="#3C3D3F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewTwo" />
+
+    <include
+        android:id="@+id/viewThree"
+        layout="@layout/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStateIdentification" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPassport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white"
+        android:drawableStart="@drawable/ic_airplane"
+        android:drawableEnd="@drawable/ic_right"
+        android:drawablePadding="30dp"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:text="Passport"
+        android:textColor="#3C3D3F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewThree" />
+
+    <include
+        android:id="@+id/viewFour"
+        layout="@layout/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPassport" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
